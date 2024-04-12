@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        background: rgb(197, 197, 197);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header {
+        padding: 16px;
+        background-color: white;
+    }
+
+    .logo_text {
+        font-weight: 700;
+    }
+
+    .container {
+        width: 400px;
+        margin-inline: auto;
+        padding-inline: 20px;
+        margin-top: 10%;
+    }
+
+    .header_wrapper {
+        background-color: white;
+        padding: 16px;
+        border-radius: 7px;
+    }
+
+
+    .title {
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+    }
+
+    form {
+        background-color: white;
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 7px;
+    }
+
+    .select_inpute {
+        padding: 8px;
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid rgb(211, 211, 211);
+    }
+
+    .input_box {
+        padding: 8px;
+        width: 95%;
+        border-radius: 4px;
+        border: 1px solid rgb(211, 211, 211);
+    }
+
+    label {
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 4px;
+        color: rgb(140, 140, 140);
+    }
+
+    .submit_btn {
+        background-color: black;
+        color: white;
+        width: 100%;
+        padding: 14px;
+        border: none;
+        margin-top: 20px;
+        margin-bottom: 16px;
+        border-radius: 4px;
+    }
+    
+    .pay_btn {
+        border-radius: 4px; 
+        background-color: rgb(127, 127, 127);
+        color: white;
+        width: 100%;
+        padding: 16px;
+        border: none;
+    }
+
+    .student_name {
+        border: 1px solid rgb(165, 165, 243);
+        padding: 14px;
+        background: rgb(219, 219, 246);
+        margin-bottom: 20px;
+    }
+
+    .details {
+        background: white;
+        padding: 20px;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 4px;
+        color: rgb(140, 140, 140);
+    }
+
+    .gender-label {
+        display: inline-block;
+        padding: 0 !important;
+        color: black;
+    }
+
+    .gender_wrapper {
+        padding-top: 20px;
+        padding-bottom: px;
+    }
+
+    .gender_wrapper>p {
+        padding-bottom: 6px;
+    }
+</style>
+
+<body>
+
+    <section class="container">
+        <div class="header_wrapper">
+            <h1 class="title">Admission Form</h1>
+        </div>
+        <form action="">
+            <div>
+                <label for="">Your Name</label>
+                <input type="text" class="input_box" placeholder="Enter the Name">
+            </div>
+            <div>
+                <label for="">Email Address</label>
+                <input type="text" class="input_box" placeholder="Enter the Email ID">
+            </div>
+            <div>
+                <label for="">Mobile Number</label>
+                <input type="text" class="input_box" placeholder="Enter the Mobile Number">
+            </div>
+            <div class="gender_wrapper">
+                <p>Gender</p>
+                <input type="radio" id="male" name="gender" />
+                <label class="gender-label" for="male">Male</label>
+                <input type="radio" id="female" name="gender" />
+                <label class="gender-label" for="female">Female</label>
+                <input type="radio" id="other" name="gender" />
+                <label class="gender-label" for="other">Other</label>
+            </div>
+            <div>
+                <label for="">Date of Birth</label>
+                <input type="date" class="input_box" placeholder="dd/mm/yyyy">
+            </div>
+            <label for="">Course</label>
+            <select class="select_inpute">
+                <option hidden>Select Course</option>
+                <option value="bca">BCA</option>
+                <option value="bsc_it">BSC IT</option>
+                <option value="bsc_ca">BSC CA & IT</option>
+            </select>
+            <div>
+                <label for="">12th Marksheet </label>
+                <input type="file" class="input_box">
+            </div>
+            <div>
+                <label for="">Password</label>
+                <input type="password" class="input_box" placeholder="Enter the Password">
+            </div>
+            <div>
+                <label for="">Confirm Password</label>
+                <input type="password" class="input_box" placeholder="Enter the Confirm Password">
+            </div>
+            <button type="submit" class="submit_btn">Register Now</button>
+            <button type="submit" class="pay_btn">Clear</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
